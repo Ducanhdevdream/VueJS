@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <hw2 msg=""/>
+    <crud msg=""/>
     <!-- <lession2 msg=""/> -->
   </div>
 </template>
@@ -11,7 +11,8 @@
 // import lession4page2 from './components/ls4-page2.vue'
 // import HW1 from './components/HW1.vue'
 // import HW1 from './components/HW1-3.vue'
-import hw2 from './components/Bai Tap/hw2-1.vue'
+import crud from './components/Bai Tap/EX3/3.2/crud.vue'
+
 
 export default {
   name: 'App',
@@ -19,7 +20,7 @@ export default {
     // lession2,
     // lession4,
     // lession4page2
-    hw2
+    crud
   }
 }
 </script>

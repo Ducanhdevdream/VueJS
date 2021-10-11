@@ -1,32 +1,62 @@
 <template>
   <div id="app">
-    <crud msg=""/>
-    <!-- <lession2 msg=""/> -->
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/Survey">Survey</router-link> |
+      <router-link :to="`/users/${userid}`">User</router-link> |
+      <button @click="btprofile()">Profile</button>
+      <button @click="btpost()">Post</button>
+      <hw2/>
+    </div>
+    <router-view/> -->
+    <hw5/>
   </div>
 </template>
-
 <script>
-// import lession2 from './components/lession2.vue'
-// import lession4 from './components/lession4.vue'
-// import lession4page2 from './components/ls4-page2.vue'
-// import HW1 from './components/HW1.vue'
-// import HW1 from './components/HW1-3.vue'
-import crud from './components/Bai Tap/EX3/3.2/crud.vue'
-
-
-export default {
-  name: 'App',
-  components: {
-    // lession2,
-    // lession4,
-    // lession4page2
-    crud
-  }
-}
+import hw5 from './components/Bai Tap/EX5/Home.vue'
+export default ({
+  name: "app",
+  components:{
+    hw5
+  },
+  data(){
+    return{
+      userid : 12,
+    }
+  },
+  // methods:{
+  //   btprofile(){
+  //     this.$router.push({path: '/users/12/profile'})
+  //   },
+  //   btpost(){
+  //     this.$router.push({path: '/users/12/posts'})
+  //   }
+  // }
+  
+})
 </script>
 
-<style>
+
+<style lang="scss">
 #app {
-  margin: 0 auto;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 </style>

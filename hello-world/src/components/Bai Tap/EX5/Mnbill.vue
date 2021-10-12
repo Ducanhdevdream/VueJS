@@ -12,7 +12,7 @@
 <script>
 import Home from "./Home";
 export default {
-  name: "InvoicePage",
+  name: "Mnbill",
   components: {Home},
   data(){
     return{

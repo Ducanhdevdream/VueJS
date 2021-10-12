@@ -12,7 +12,7 @@
 <script>
 import Home from "./Home";
 export default {
-  name: "StatisticPage",
+  name: "Static",
   components: {Home},
   data(){
     return{

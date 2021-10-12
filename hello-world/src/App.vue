@@ -1,16 +1,15 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
+     <div id="nav"> 
+      <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/Survey">Survey</router-link> |
       <router-link :to="`/users/${userid}`">User</router-link> |
       <button @click="btprofile()">Profile</button>
-      <button @click="btpost()">Post</button>
-      <hw2/>
+      <button @click="btpost()">Post</button> -->
+      <hw5/>
+      <router-view/> 
     </div>
-    <router-view/> -->
-    <hw5/>
   </div>
 </template>
 <script>

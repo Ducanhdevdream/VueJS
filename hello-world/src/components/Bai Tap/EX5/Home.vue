@@ -16,11 +16,11 @@
             <i class="el-icon-box"></i>
             <span >Quản lý sản phẩm</span>
           </el-menu-item>
-          <el-menu-item index="3" @click="pushToProduct('Mnbill')">
+          <el-menu-item index="3" @click="pushToProduct('invoice-management')">
             <i class="el-icon-document"></i>
             <span>Quản lý hóa đơn</span>
           </el-menu-item>
-          <el-menu-item index="4" @click="pushToProduct('Static')">
+          <el-menu-item index="4" @click="pushToProduct('statistic')">
             <i class="el-icon-s-data"></i>
             <span>Báo cáo thống kê</span>
           </el-menu-item>

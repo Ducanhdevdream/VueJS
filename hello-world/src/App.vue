@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import hw5 from './components/Bai Tap/EX2/hw2-1.vue'
+import hw5 from './components/Bai Tap/EX7/7.2/hw7-2.vue'
 export default ({
   name: "app",
   components:{

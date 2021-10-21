@@ -1,19 +1,20 @@
 <template>
   <div id="app">
      <div id="nav"> 
-      <!-- <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/Survey">Survey</router-link> |
-      <router-link :to="`/users/${userid}`">User</router-link> |
-      <button @click="btprofile()">Profile</button>
-      <button @click="btpost()">Post</button> -->
-      <hw5/>
-      <router-view/> 
+       <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+      <!-- <router-link to="/">Home</router-link> | -->
+      <!-- <router-link to="/about">About</router-link> | -->
+      <!-- <router-link to="/Survey">Survey</router-link> | -->
+      <!-- <router-link :to="`/users/${userid}`">User</router-link> | -->
+      <!-- <button @click="btprofile()">Profile</button> -->
+      <!-- <button @click="btpost()">Post</button> -->
+      <hw5 msg="Welcome to Your Vue.js App"/>
+      <!-- <router-view/>  -->
     </div>
   </div>
 </template>
 <script>
-import hw5 from './components/Bai Tap/EX5/Home.vue'
+import hw5 from './components/Bai Tap/EX2/hw2-1.vue'
 export default ({
   name: "app",
   components:{

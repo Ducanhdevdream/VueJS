@@ -1,8 +1,9 @@
 
 <template>
    <div class="container">
-    <hlw2 @onLogin="handleOnLogin" />
-    <hlw1 :username="name"></hlw1>
+    <!-- <hlw2 @onLogin="handleOnLogin" /> -->
+    <hlw2/>
+    <hlw1></hlw1>
   </div>
 </template>
 
@@ -16,17 +17,11 @@ export default {
   },
   data() {
     return{
-      name : '',
-      pass : ''
+      
     }
   },
   methods: {
-    handleOnLogin(value){
-      this.pass = value;
-      if(this.pass.length > 6){
-        this.name = 'error'
-      }
-    },
+    
   },
   computed: {
 

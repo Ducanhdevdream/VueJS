@@ -1,33 +1,33 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
+import Home from '../views/Home.vue'
 // import Profile from '../views/Profile.vue'
 // import Post from '../views/Post.vue'
-import Home from '../components/Bai Tap/EX5/Home'
-import ProductPage from '../components/Bai Tap/EX5/ProductPage.vue'
-import Mnbill from '../components/Bai Tap/EX5/Mnbill.vue'
-import Static from '../components/Bai Tap/EX5/Static.vue'
-import Product from '../components/Bai Tap/EX5/Product.vue'
-import Order from '../components/Bai Tap/EX5/Order.vue'
-import User from '../components/Bai Tap/EX5/User.vue'
-import Revenue from '../components/Bai Tap/EX5/Revenue.vue'
-import Inventory from '../components/Bai Tap/EX5/Inventory.vue'
-import SystemPage from '../components/Bai Tap/EX5/SystemPage.vue'
-import Login from '../components/Bai Tap/EX5/Login.vue'
+// import Home from '../components/Bai Tap/EX5/Home'
+// import ProductPage from '../components/Bai Tap/EX5/ProductPage.vue'
+// import Mnbill from '../components/Bai Tap/EX5/Mnbill.vue'
+// import Static from '../components/Bai Tap/EX5/Static.vue'
+// import Product from '../components/Bai Tap/EX5/Product.vue'
+// import Order from '../components/Bai Tap/EX5/Order.vue'
+// import User from '../components/Bai Tap/EX5/User.vue'
+// import Revenue from '../components/Bai Tap/EX5/Revenue.vue'
+// import Inventory from '../components/Bai Tap/EX5/Inventory.vue'
+// import SystemPage from '../components/Bai Tap/EX5/SystemPage.vue'
+// import Login from '../components/Bai Tap/EX5/Login.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  // {
-  //   path: '/',
-  //   name: 'Home',
-  //   component: Home
-  // },
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // },
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
   // {
   //   path: '/user/:id',
   //   name: 'User',
@@ -44,61 +44,61 @@ const routes = [
   //   ]
   // },
     //Unit 05
-  {
-    path: '/login',
-    name : 'ProductPage',
-    component: Login
-  },
-  {
-    path : '/',
-    name : 'Home',
-    component: Home,
-  },
-  {
-    path: '/product-management',
-    name : 'ProductPage',
-    component: ProductPage
-  },
-  {
-    path: '/Mnbill',
-    name : 'Mnbill',
-    component: Mnbill
-  },
-  {
-    path: '/Static',
-    name : 'Static',
-    component: Static
-  },
-  {
-    path: '/product',
-    name : 'Product',
-    component: Product
-  },
-  {
-    path: '/order',
-    name : 'Order',
-    component: Order
-  },
-  {
-    path: '/User',
-    name : 'User',
-    component: User
-  },
-  {
-    path: '/revenue',
-    name : 'Revenue',
-    component: Revenue
-  },
-  {
-    path: '/inventory',
-    name : 'Inventory',
-    component: Inventory
-  },
-  {
-    path: '/system',
-    name : 'SystemPage',
-    component: SystemPage
-  },
+  // {
+  //   path: '/login',
+  //   name : 'ProductPage',
+  //   component: Login
+  // },
+  // {
+  //   path : '/',
+  //   name : 'Home',
+  //   component: Home,
+  // },
+  // {
+  //   path: '/product-management',
+  //   name : 'ProductPage',
+  //   component: ProductPage
+  // },
+  // {
+  //   path: '/Mnbill',
+  //   name : 'Mnbill',
+  //   component: Mnbill
+  // },
+  // {
+  //   path: '/Static',
+  //   name : 'Static',
+  //   component: Static
+  // },
+  // {
+  //   path: '/product',
+  //   name : 'Product',
+  //   component: Product
+  // },
+  // {
+  //   path: '/order',
+  //   name : 'Order',
+  //   component: Order
+  // },
+  // {
+  //   path: '/User',
+  //   name : 'User',
+  //   component: User
+  // },
+  // {
+  //   path: '/revenue',
+  //   name : 'Revenue',
+  //   component: Revenue
+  // },
+  // {
+  //   path: '/inventory',
+  //   name : 'Inventory',
+  //   component: Inventory
+  // },
+  // {
+  //   path: '/system',
+  //   name : 'SystemPage',
+  //   component: SystemPage
+  // },
 
 ]
 

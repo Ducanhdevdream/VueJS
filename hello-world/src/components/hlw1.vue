@@ -2,18 +2,35 @@
     <div class="infoWrap">
       <div class="infoLabel">
         Hello {{username}}
+        <h3>task list</h3>
+        <ul>
+          <li v-for="item in doneTodos" :key="item.id">{{item.text}}</li>
+        </ul>
+        <h3>total task done: {{doneTodosCount}}</h3>
+        <h3>task 3: {{gettodobyId(3)}}</h3>
       </div>
     </div>
 </template>
 
 <script>
+import { mapGetters, mapState } from 'vuex';
 export default {
   name: "Welcome",
-  props: ['username'],
+  computed: {
+      ...mapState([
+        'username',
+        'todo'
+      ]),
+      ...mapGetters([
+        'doneTodos',
+        'doneTodosCount',
+        'gettodobyId'
+      ])
+    }
 
 }
-</script>
-
+</script> 
+  
 <style scoped lang="scss">
     .infoWrap {
       background: #fff;

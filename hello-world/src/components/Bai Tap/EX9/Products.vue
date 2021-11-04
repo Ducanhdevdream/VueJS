@@ -4,7 +4,8 @@
       <el-button type="primary" @click="createProduct()">Thêm mới</el-button>
       <br>
       <input v-model="search" class="search" type="text" placeholder="Tìm kiếm sản phẩm" @keydown.enter="searchProduct">
-      
+      <input type="file" accept="image/*" @change="changeFile">
+      <button @click="uploadFile">Submit</button>
     </div>
     <el-dialog
         title="Tạo mới sản phẩm"
@@ -201,7 +202,21 @@ export default {
       }).catch(() => {
       });
     },
-    
+    submitForm(formName) {
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          this.storeProduct()
+          this.dialogVisible = false
+          this.$message({
+            message: 'Tạo mới thành công!',
+            type: 'success'
+          });
+        } else {
+          console.log('error submit!!');
+          return false;
+        }
+      });
+    },
     resetForm(formName) {
       this.$refs[formName].resetFields();
     },
@@ -259,8 +274,26 @@ export default {
     formatDate (dateString) {
       return moment(dateString).format('hh:mm | DD/MM/YYYY')
     },
-    
-    
+    changeFile(e) {
+      if (e.target.files.length) {
+        this.image = e.target.files[0]
+      }
+    },
+    uploadFile() {
+      const frmData = new FormData()
+      frmData.append('name', 'Đức Anh')
+      frmData.append('price', 1)
+      frmData.append('image', this.image)
+      axios({
+        method: 'post',
+        url: 'http://vuecourse.zent.edu.vn/api/products',
+        data: frmData
+      }).then(() => {
+        console.log('success')
+      }).catch((error) => {
+        console.log(error);
+      });
+    }
   },
   mounted() {
     this.getData()
